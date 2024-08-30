@@ -14,9 +14,10 @@ function App() {
     <>
       <Canvas>
         <OrbitControls />
-        <Grid args={[100, 100]} position={[0, 0.1, 0]} />
+        {/* <Grid args={[100, 100]} position={[0, 0.1, 0]} /> */}
         <Experience />
-        <Environment preset="sunset" background />
+        <ambientLight intensity={0.4} />
+        <Environment preset="night" backgroundIntensity={1} background />
       </Canvas>
     </>
   );
