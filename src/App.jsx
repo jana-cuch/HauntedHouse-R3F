@@ -16,7 +16,7 @@ function App() {
         <OrbitControls />
         <Grid args={[100, 100]} position={[0, 0.1, 0]} />
         <Experience />
-        <Environment preset="sunset" />
+        <Environment preset="sunset" background />
       </Canvas>
     </>
   );
